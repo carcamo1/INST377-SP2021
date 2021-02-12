@@ -1,2 +1,9 @@
 /* Add some css styles based on the tutorial at javascript.info: introduction to browser events
  https://javascript.info/introduction-browser-events */
+ .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
