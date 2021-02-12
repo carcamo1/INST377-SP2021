@@ -7,7 +7,6 @@ const pics = document.querySelector(".images")
          pics.insertBefore(element, pics.children[0]);
      });
  }
-
  function shift_right(){
     const first_three = Array.from(pics.children).slice(0,3);
     first_three.forEach((element) => {
@@ -15,7 +14,6 @@ const pics = document.querySelector(".images")
         pics.appendChild(element);
     });
 }
-
 function load_page(){
     document.querySelector("button.arrow.prev").addEventListener("click", (event) => {
         shift_left();
@@ -23,6 +21,5 @@ function load_page(){
     document.querySelector("button.arrow.next").addEventListener("click", (event) => {
         shift_right()
     });
-   
 }
 window.onload = load_page;
