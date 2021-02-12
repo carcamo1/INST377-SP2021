@@ -1,18 +1,18 @@
-const list_container = document.querySelector(".images")
+const pics = document.querySelector(".images")
 
  function shift_left(){
-     const last_three = Array.from(list_container.children).slice(4,7).reverse();
+     const last_three = Array.from(pics.children).slice(4,7).reverse();
      last_three.forEach((element) => {
-         list_container.removeChild(element);
-         list_container.insertBefore(element, list_container.children[0]);
+         pics.removeChild(element);
+         pics.insertBefore(element, pics.children[0]);
      });
  }
 
  function shift_right(){
-    const first_three = Array.from(list_container.children).slice(0,3);
+    const first_three = Array.from(pics.children).slice(0,3);
     first_three.forEach((element) => {
-        list_container.removeChild(element);
-        list_container.appendChild(element);
+        pics.removeChild(element);
+        pics.appendChild(element);
     });
 }
 
