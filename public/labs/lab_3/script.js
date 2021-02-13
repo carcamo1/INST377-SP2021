@@ -1,5 +1,5 @@
 function carousel() {  
- const pics = document.querySelector(".images")
+ const pics = document.querySelector("images")
  function left(){
      const last = Array.from(pics.children).slice(4,7).reverse();
      last.forEach((element) => {
@@ -13,14 +13,14 @@ function carousel() {
         pics.removeChild(element);
         pics.appendChild(element);
     });
-}
-function home(){
+ }
+ function home(){
     document.querySelector("button.arrow.prev").addEventListener("click", (event) => {
         left();
     });
     document.querySelector("button.arrow.next").addEventListener("click", (event) => {
         right()
     });
-}
+ }
 }
 window.onload = carousel;
