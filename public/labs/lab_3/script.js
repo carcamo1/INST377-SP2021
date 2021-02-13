@@ -1,5 +1,4 @@
-function carousel() {  
- const pics = document.querySelector("images")
+const pics = document.querySelector("images")
  function left(){
      const last = Array.from(pics.children).slice(4,7).reverse();
      last.forEach((element) => {
@@ -23,4 +22,4 @@ function carousel() {
     });
  }
 }
-window.onload = carousel;
+window.onload = home;
