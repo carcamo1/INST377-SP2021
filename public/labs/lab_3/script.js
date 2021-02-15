@@ -21,5 +21,5 @@ const pics = document.querySelector(images)
         right()
     });
  }
-}
+
 window.onload = home;

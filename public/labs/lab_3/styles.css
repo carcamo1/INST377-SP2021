@@ -2,7 +2,7 @@
  https://javascript.info/introduction-browser-events */
  body {
   padding: 10px;
-  background: rgb(133, 7, 7);
+  background: rgb(99, 224, 208);
 
 }
 
@@ -15,9 +15,9 @@ margin: auto;
   transform: translate(-50%, -50%);
   width: 398px;
   padding: 10px 40px;
-  border: 1px solid #CCC;
+  border: 1px solid rgb(241, 225, 255);
   border-radius: 15px;
-  background: #eee;
+  background: rgb(230, 183, 183);
 }
 
 .carousel img {
@@ -30,12 +30,12 @@ margin: auto;
   position: absolute;
   top: 60px;
   padding: 0;
-  background: #ddd;
+  background: rgb(194, 159, 159);
   border-radius: 15px;
-  border: 1px solid gray;
+  border: 1px solid rgb(224, 175, 175);
   font-size: 24px;
   line-height: 24px;
-  color: #444;
+  color: rgb(207, 167, 167);
   display: block;
 }
 
@@ -44,7 +44,7 @@ margin: auto;
 }
 
 .arrow:hover {
-  background: #ccc;
+  background: rgb(218, 164, 164);
   cursor: pointer;
 }
 
