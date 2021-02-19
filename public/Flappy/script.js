@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const flappy = document.querySelector('.flappy')
+    const flap = document.querySelector('.flap')
     const display = document.querySelector('.game-container')
     const ground = document.querySelector('.ground')
 
-    let flappyleft = 220
-    let flappybottom = 100
+    let flapleft = 220
+    let flapbottom = 100
     let gravity = 2
     let game_over = false
     let gap = 430
 
     function startGame() {
-        flappybottom -= gravity
-        flappy.style.bottom = flappybottom + 'px'
-        flappy.style.left = flappyleft + 'px'
+        flapbottom -= gravity
+        flap.style.bottom = flapbottom + 'px'
+        flap.style.left = flapleft + 'px'
     }
     let gameTimerId = setInterval(startGame, 20)
 
@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     function jump() {
-        if (flappybottom < 500) flappybottom += 50
-        flappy.style.bottom = flappybottom + 'px'
-        console.log(flappybottom)
+        if (flapbottom < 500) flapbottom += 50
+        flap.style.bottom = flapbottom + 'px'
+        console.log(flapbottom)
     }
     document.addEventListener('keyup', control)
     function generateObstacle() {
@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 display.removeChild(topObstacle)
             }
             if (
-                obstacleLeft > 200 && obstacleLeft < 280 && flappyleft === 220 &&
-                (flappybottom < obstacleBottom + 153|| flappybottom > obstacleBottom 
+                obstacleLeft > 200 && obstacleLeft < 280 && flapleft === 220 &&
+                (flapbottom < obstacleBottom + 153|| flapbottom > obstacleBottom 
                     + gap -200)||
-                flappybottom === 0
+                flapbottom === 0
                 ) {
                 gameOver()
                 clearInterval(timerId)
