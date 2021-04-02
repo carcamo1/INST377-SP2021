@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let visual = platform.visual;
     visual.style.bottom = platform.bottom + "px";
     if (platform.bottom < 10) {
-    let firstPlatform = platforms[0].visual;
-    firstPlatform.classList.remove("platform");
+    let firstplat = platforms[0].visual;
+    firstplat.classList.remove("platform");
     platforms.shift();
     console.log(platforms);
     score++;
